@@ -1,4 +1,9 @@
-using BEAMS;
+ï»¿using BEAMS;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace BEAMSTests
 {
@@ -8,12 +13,12 @@ namespace BEAMSTests
         [TestMethod]
         public void ConfirmGetInfo()
         {
-            var product1 = new Product("ƒXƒj[ƒJ[",13200,"¦l‹C¤•i‚Ì‚½‚ßw“üŒã‚Ì•Ô•i•s‰Â");
-            var expected1 = "ƒXƒj[ƒJ[ 13,200 ‰~ ¦l‹C¤•i‚Ì‚½‚ßw“üŒã‚Ì•Ô•i•s‰Â";
+            var product1 = new Product("ã‚¹ãƒ‹ãƒ¼ã‚«ãƒ¼", 13200, "â€»äººæ°—å•†å“ã®ãŸã‚è³¼å…¥å¾Œã®è¿”å“ä¸å¯");
+            var expected1 = "ã‚¹ãƒ‹ãƒ¼ã‚«ãƒ¼ 13,200 å†† â€»äººæ°—å•†å“ã®ãŸã‚è³¼å…¥å¾Œã®è¿”å“ä¸å¯";
             Assert.AreEqual(expected1, product1.GetInfo());
 
-            var product2 = new Product("ƒ`ƒmƒpƒ“", 13200, "ƒr[ƒ€ƒX‚Ì•S–¼•i");
-            var expected2 = "ƒ`ƒmƒpƒ“ 13,200 ‰~ ƒr[ƒ€ƒX‚Ì•S–¼•i";
+            var product2 = new Product("ãƒãƒãƒ‘ãƒ³", 13200, "ãƒ“ãƒ¼ãƒ ã‚¹ã®ç™¾åå“");
+            var expected2 = "ãƒãƒãƒ‘ãƒ³ 13,200 å†† ãƒ“ãƒ¼ãƒ ã‚¹ã®ç™¾åå“";
             Assert.AreEqual(expected2, product2.GetInfo());
         }
     }
