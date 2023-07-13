@@ -25,7 +25,7 @@ namespace BEAMSTests
 ```
 
 ### 2. ビルドが通るようにコードを実装する・テストが失敗するコードを書く
-```
+```csharp
 namespace BEAMS
 {
     public class Product
@@ -45,7 +45,7 @@ namespace BEAMS
 
 
 ### 4. テストが成功するコードを書く
-```
+```csharp
 namespace BEAMS
 {
     public class Product
@@ -66,7 +66,7 @@ namespace BEAMS
 
 
 ### 6. テストの条件を追加する
-```
+```csharp
 namespace BEAMSTests
 {
     [TestClass]
@@ -90,7 +90,7 @@ namespace BEAMSTests
 ### 7. テストを実行し、失敗することを確認する
 
 ### 8. テストが成功するコードを書く
-```
+```csharp
 namespace BEAMS
 {
     public class Product
