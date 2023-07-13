@@ -8,11 +8,13 @@ namespace BEAMS
 {
     public class Product
     {
+        public static int Count = 0;
         public String Name { get; }
         public int Price { get; }
         public String Memo { get; }
         public Product(string name, int price, string memo)
         {
+            Count += 1;
             Name = name;
             Price = price;
             Memo = memo;
