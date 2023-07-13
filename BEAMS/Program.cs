@@ -14,7 +14,6 @@
             products.Add(food1);
             products.Add(drink1);
 
-            Console.WriteLine($"商品数：{Product.Count}");
             products.ForEach(product => Console.WriteLine(product.GetInfo()));
         }
     }
