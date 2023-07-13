@@ -13,7 +13,6 @@ namespace BEAMS
         public String Memo { get; }
         public Product(string name, int price, string memo)
         {
-            Count++;
             Name = name;
             Price = price;
             Memo = memo;
