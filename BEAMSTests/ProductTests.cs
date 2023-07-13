@@ -11,6 +11,12 @@ namespace BEAMSTests
     public class ProductTests
     {
         [TestMethod]
+        public void ConfirmCount()
+        {
+            var product1 = new Product("商品1", 100, "テスト");
+            Assert.AreEqual(1, Product.Count);
+        }
+        [TestMethod]
         public void ConfirmGetInfo()
         {
             var product1 = new Product("スニーカー", 13200, "※人気商品のため購入後の返品不可");
