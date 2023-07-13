@@ -117,3 +117,6 @@ namespace BEAMS
     }
 }
 ```
+
+## テスト結果
+![Code Coverage](https://img.shields.io/badge/Code%20Coverage-76%25-yellow?style=flat)
