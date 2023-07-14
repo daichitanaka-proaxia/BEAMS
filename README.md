@@ -3,6 +3,28 @@
 セレクトショップを題材に、テストコードの書き方を学ぶ
 
 ## テストコードの書き方
+```csharp
+namespace BEAMSTests
+{
+    [TestClass]
+    public class ExtensionTests
+    {
+        [TestMethod]
+        public void ConfirmDeliminate()
+        {
+            var expected1 = "999";
+            var result1 = Extension.Deliminate(999);
+            Assert.AreEqual(expected1, result1);
+
+            var expected2 = "1,000";
+            var result2 = Extension.Deliminate(1000);
+            Assert.AreEqual(expected2, result2);
+        }
+    }
+}
+```
+
+## テスト駆動開発（TDD）の進め方
 ### 1. 先にテストコードを書く
 
 ```csharp
