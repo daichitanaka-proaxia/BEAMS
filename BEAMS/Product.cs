@@ -20,12 +20,7 @@ namespace BEAMS
 
         public virtual String GetInfo()
         {
-            return $"{Name} {Deliminate(Price)} 円 {Memo}";
-        }
-
-        protected String Deliminate(int value)
-        {
-            return String.Format("{0:#,0}", value);
+            return $"{Name} {Extension.Deliminate(Price)} 円 {Memo}";
         }
     }
 }

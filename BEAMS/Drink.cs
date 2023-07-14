@@ -16,7 +16,7 @@ namespace BEAMS
 
         public override String GetInfo()
         {
-            return $"【飲料品】{Name} {Deliminate(Price)}円 {Deliminate(Amount)}ml {Memo} ★軽率減税適用品★";
+            return $"【飲料品】{Name} {Extension.Deliminate(Price)}円 {Extension.Deliminate(Amount)}ml {Memo} ★軽率減税適用品★";
         }
     }
 }
